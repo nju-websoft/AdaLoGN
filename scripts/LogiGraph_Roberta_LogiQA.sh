@@ -17,7 +17,7 @@ CUDA_VISIBLE_DEVICES=0 python run_multiple_choice.py \
   --data_dir $DATASET_DIR \
   --$MODE \
   --do_eval \
-  --seed 123 \
+  --seed 42 \
   --model_type $MODEL_TYPE \
   --max_seq_length 384 \
   --per_device_eval_batch_size 16 \
