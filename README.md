@@ -8,6 +8,7 @@ torch==1.7.1
 dgl-cu101==0.6.1
 stanza==1.2.3
 transformers==4.5.0
+networkx
 nltk
 scikit-learn
 pylev
