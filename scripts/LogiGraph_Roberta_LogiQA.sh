@@ -33,6 +33,6 @@ CUDA_VISIBLE_DEVICES=0 python run_multiple_choice.py \
   --metric_for_best_model acc_dev \
   --gnn_layers_num 2 \
   --save_total_limit 2 \
-  --dropout 0.2 \
+  --dropout 0.1 \
   --warmup_ratio 0.2 \
   --pooling_type attention_pooling_with_gru
