@@ -32,8 +32,8 @@ For ReClor dataset, we submit prediction file on [ReClor Leaderboard](https://ev
 You can also install [wandb](https://docs.wandb.ai/quickstart) and set ``export WANDB_DISABLED=false`` in training scripts to visualize the training process.
 ```shell
 export MODE=do_train
-bash scripts/LogiGraph_Roberta.sh /PATH/TO/ROBERTA/LARGE  ## ReClor evaluation
-bash scripts/LogiGraph_Roberta_LogiQA.sh /PATH/TO/ROBERTA/LARGE  ## LogiQA evaluation
+bash scripts/LogiGraph_Roberta.sh /PATH/TO/ROBERTA/LARGE  ## ReClor training
+bash scripts/LogiGraph_Roberta_LogiQA.sh /PATH/TO/ROBERTA/LARGE  ## LogiQA training
 ```
 
 ## Citation
