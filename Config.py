@@ -1,11 +1,10 @@
 import os
 
 model_type = os.environ['MODEL_TYPE']
-assert model_type == 'Roberta' or model_type == 'Bert' or model_type == 'Albert'
-SEP_TOKEN = '[SEP]' if model_type == 'Bert' or model_type == 'Albert' else '</s>'
-CLS_TOKEN = '[CLS]' if model_type == 'Bert' or model_type == 'Albert' else '<s>'
-NODE_SEP_TOKEN = '[unused1]' if model_type == 'Bert' or model_type == 'Albert' else '|'
-QUESTION_SEP_TOKEN = '[unused2]' if model_type == 'Bert' or model_type == 'Albert' else '^'
+assert model_type == 'Roberta'
+SEP_TOKEN = '</s>'
+CLS_TOKEN = '<s>'
+NODE_SEP_TOKEN = '|'
 tokenizer = None
 eval_test = True
 model_args = None
@@ -20,5 +19,3 @@ truncate_nodes_num = 25
 
 max_edge_num = 101
 max_node_num = 50
-
-rel_score_records = []
