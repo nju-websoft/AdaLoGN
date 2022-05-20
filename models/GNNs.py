@@ -195,6 +195,7 @@ class RGATLayer(nn.Module):
                     exten_edges[0].append(eni[0].view(-1))
                     exten_edges[1].append(eni[1].view(-1))
                     edge_relation_type.append(exten_edges_ids[i][j][2].view(1))
+                rel_socre_i.append(pred_value)
             if len(exten_edges[0]) != 0:
                 graphs_list[i].add_edges(torch.cat(exten_edges[0]), torch.cat(exten_edges[1]),
                                          {'rel_type': torch.cat(edge_relation_type),
@@ -277,6 +278,7 @@ class RGATLayer(nn.Module):
         h = torch.stack(new_whole_g_h)
         if self.activation is not None:
             h = self.activation(h)
+        _g.ndata['h'] = h
         return self.dropout(h), g.ndata['origin_id'], g.batch_num_nodes(), g.batch_num_edges(), torch.cat(rel_scores,
                                                                                                           dim=-1).view(
             -1, 1)
