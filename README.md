@@ -37,4 +37,13 @@ bash scripts/LogiGraph_Roberta_LogiQA.sh /PATH/TO/ROBERTA/LARGE  ## LogiQA train
 ```
 
 ## Citation
-To be updated.
+Please cite this paper kindly in your publications if it helps your research.
+```
+@inproceedings{li2022adalogn,
+  title={AdaLoGN: Adaptive Logic Graph Network for Reasoning-Based Machine Reading Comprehension},
+  author={Li, Xiao and Cheng, Gong and Chen, Ziheng and Sun, Yawei and Qu, Yuzhong},
+  booktitle={Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={7147--7161},
+  year={2022}
+}
+```
